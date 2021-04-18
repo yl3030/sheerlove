@@ -60,6 +60,55 @@ button {
     letter-spacing: 1.5px;
 }
 
+.small-title {
+    font-family: "Noto Sans TC";
+    font-size: 15px;
+    letter-spacing: 1.3px;
+    margin-bottom: 45px;
+}
+
+.service-title {
+    font-family: "Noto Serif TC";
+    font-weight: 700;
+    font-size: 45px;
+    letter-spacing: 3px;
+    color: #423D39;
+    line-height: 1.3;
+    margin-bottom: 40px;
+}
+
+.service-content p {
+    color: #423D39;
+    font-family: "Noto Sans TC";
+    font-family: 15.5px;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.service-box {
+    padding: 145px 0;
+}
+
+.service-box .pic-box {
+    display: flex;
+    align-items: center;
+}
+
+.service-box.pic-left .pic-box {
+    padding-right: 85px;
+}
+
+.service-box.pic-right .pic-box {
+    padding-left: 85px;
+}
+
+.service-box .pic-box .pic {
+    width: 100%;
+    height: 0;
+    padding-bottom: 70%;
+}
+
 header {
     height: 80px;
     background-color: #E7DFD9;
@@ -129,6 +178,50 @@ nav ul li.active span:first-child {
 
 nav ul li.active span:nth-child(2) {
     display: inline-block;
+}
+
+#menu-icon {
+    width: 21px;
+    height: 16px;
+    position: relative;
+    transition: 0.5s;
+    display: none;
+}
+
+#menu-icon .bar {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: #000;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+#menu-icon .top-bar {
+    top: 0;
+}
+
+#menu-icon .middle-bar {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#menu-icon .bottom-bar {
+    bottom: 0;
+}
+
+#menu-icon.active .top-bar {
+    transform: rotate(45deg);
+    top: 10px;
+}
+
+#menu-icon.active .middle-bar {
+    opacity: 0;
+}
+
+#menu-icon.active .bottom-bar {
+    transform: rotate(-45deg);
+    top: 10px;
 }
 
 main {
@@ -294,6 +387,7 @@ footer .copyright {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    color: #fff;
 }
 
 .teacher .text h3 {
@@ -335,6 +429,18 @@ footer .copyright {
     margin-bottom: 0;
 }
 
+.teacher .text button {
+    color: #fff;
+    display: block;
+    padding: 13px 15px;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    background-color: #423D39;
+    margin: 0 auto 40px;
+    display: none;
+}
+
 .teacher .pic {
     position: relative;
     width: 50%;
@@ -352,7 +458,7 @@ footer .copyright {
 }
 
 .teacher:hover .pic img {
-    transform: translateX(50%)scale(1.1);
+    transform: translateX(50%)scale(1.2);
 }
 
 /* 純淨，一心專注在把最好的給你 */
@@ -488,11 +594,13 @@ footer .copyright {
 }
 
 /* news */
+
 .news {
     background-color: #fff;
     padding-top: 100px;
     padding-bottom: 200px;
 }
+
 .news-box {
     margin: 100px auto 75px;
     width: 100%;
@@ -586,4 +694,609 @@ footer .copyright {
 
 .news button:hover a {
     transform: scale(1.1);
+}
+
+/* service-banner */
+
+.service-banner {
+    width: 100%;
+    height: 0;
+    padding-bottom: 32%;
+    background-image: url(../img/service_banner.jpg);
+    position: relative;
+}
+
+.service-banner .banner-title {
+    background-color: #B5928E;
+    width: 45%;
+    padding: 50px 65px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.service-banner .banner-title .bt {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.service-banner .banner-title .bt h1 {
+    color: #fff;
+    font-family: "Noto Serif TC";
+    font-size: 26px;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+}
+
+.service-banner .banner-title .bt div {
+    background-color: #fff;
+    width: 15px;
+    height: 4px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.service-banner .banner-title .bt p {
+    color: #fff;
+    font-family: "Noto Sans TC";
+    font-weight: 300;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    letter-spacing: 1.5px;
+}
+
+/* SKIN PHYSIOLOGY */
+
+.skin-physiology {
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.skin-physiology .service-title {
+    width: 75%;
+}
+
+.skin-physiology .small-title {
+    color: #C79D99;
+}
+
+.skin-physiology img {
+    position: absolute;
+    width: 23%;
+    top: -13%;
+    right: 5%;
+}
+
+/* golden ratio */
+
+.golden-ratio {
+    background-color: #fff;
+}
+
+.golden-ratio .small-title {
+    color: #A7CDD8;
+}
+
+/* sara beauty */
+
+.sara-beauty .small-title {
+    color: #C79D99;
+}
+
+/* price */
+
+.price {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.price-box {
+    margin-top: 110px;
+}
+
+.price-title {
+    margin-bottom: 10px;
+}
+
+.price-title span:first-child {
+    font-family: "Noto Sans TC";
+    font-size: 28px;
+    color: #C7ACA1;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.price-title span:nth-child(2) {
+    font-family: "Noto Serif TC";
+    color: #A37E84;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.price-content .pc .pc-box {
+    border: 1px solid #C79D99;
+    border-radius: 8px;
+    padding: 50px 30px 20px;
+    margin-bottom: 40px;
+}
+
+.price-content .pc .pc-box .product-name {
+    font-family: "Noto Serif TC";
+    font-weight: 700;
+    font-size: 28px;
+    color: #423D39;
+    display: inline-block;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+.price-content .pc .pc-box .duration-time {
+    display: inline-block;
+    color: #666666;
+    font-family: "Noto Sans TC";
+    float: right;
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 14px;
+}
+
+.price-content .pc .pc-box .detail p {
+    font-family: "Noto Sans TC";
+    font-weight: 700;
+    font-size: 17px;
+    color: #423D39;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.price-content .pc .pc-box .object-box .dash {
+    width: 100%;
+    height: 1px;
+    background-image: linear-gradient(to right, #C79D99 0%, #C79D99 50%, transparent 50%);
+    background-size: 12px 1px;
+    background-repeat: repeat-x;
+}
+
+.price-content .pc .pc-box .object {
+    margin: 25px 0;
+    font-family: "Noto Sans TC Regular";
+    font-size: 15px;
+    color: #423D39;
+    letter-spacing: 1.3px;
+}
+
+.price-content .pc .pc-box .highlight {
+    padding: 13px 15px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #C79D99, #A7CDD8);
+    background: -o-linear-gradient(to right, #C79D99, #A7CDD8);
+    background: -moz-linear-gradient(to right, #C79D99, #A7CDD8);
+    background: -webkit-linear-gradient(to right, #C79D99, #A7CDD8);
+}
+
+.price-content .pc .pc-box .highlight>div span:first-child {
+    color: #fff;
+    font-family: "Noto Sans TC";
+    /* font-weight: 700; */
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.price-content .pc .pc-box .highlight>div span:nth-child(2) {
+    color: #fff;
+    font-family: "Noto Sans TC";
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
+.price-box .remark {
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-weight: 700;
+    color: #808080;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .service-banner .banner-title {
+        padding: 30px 40px;
+    }
+    .skin-physiology img {
+        top: -5%;
+    right: 0;
+    }
+    .service-box.pic-left .pic-box {
+        padding-right: 40px;
+    }
+    .service-box.pic-right .pic-box {
+        padding-left: 40px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    #banner p {
+        height: 70%;
+        top: 15%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .teacher {
+        padding-bottom: 50%;
+    }
+    .si-bg .text h5 {
+        font-size: 15px;
+        line-height: 1.2;
+        letter-spacing: 1.3px;
+    }
+    .si-bg .text p {
+        font-size: 14px;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+    }
+    .si-bg .text button {
+        width: 70%;
+    }
+    .si-bg .text button a {
+        padding: 5px 0;
+        font-size: 12px;
+    }
+    footer .contact {
+        width: 90%;
+    }
+    .service-banner .banner-title {
+        padding: 20px 20px;
+    }
+    .service-banner .banner-title .bt h1 {
+        font-size: 22px;
+    letter-spacing: 1px;
+    }
+    .service-banner .banner-title .bt p {
+        font-size: 12px;
+    }
+    .skin-physiology .service-title {
+        width: 65%;
+    }
+    .skin-physiology img {
+        width: 30%;
+        top: 0;
+    }
+    .service-box.pic-left .pic-box {
+        padding-right: 10px;
+    }
+    .service-box.pic-right .pic-box {
+        padding-left: 10px;
+    }
+    .small-title {
+        margin-bottom: 15px;
+    }
+    .service-box .service-title {
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 985px) {
+    #banner p {
+        height: 80%;
+        top: 10%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 805px) {
+    #banner p {
+        height: 90%;
+        top: 10%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .news-box {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 60px;
+    }
+    header>div>div {
+        padding: 0;
+    }
+    header .logo {
+        height: 45px;
+    }
+    header nav {
+        position: fixed;
+        top: -100%;
+        right: 0;
+        width: 100vw;
+        background-color: #E7DFD9;
+        transition: 0.5s;
+        transition-timing-function: ease-in;
+    }
+    nav ul.flex-style {
+        display: block;
+    }
+    nav ul li {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+    #menu-icon {
+        display: block;
+    }
+    main {
+        margin-top: 60px;
+    }
+    #banner p {
+        height: 90%;
+        font-size: 20px;
+        left: 10%;
+        top: 10%;
+    }
+    .sf p {
+        margin-bottom: 30px;
+    }
+    .teacher {
+        position: relative;
+        padding-bottom: 0;
+        height: auto;
+        overflow: visible;
+        background: linear-gradient(45deg, #C6A8AA, #D4E9F0);
+        background: -o-linear-gradient(45deg, #C6A8AA, #D4E9F0);
+        background: -moz-linear-gradient(45deg, #C6A8AA, #D4E9F0);
+        background: -webkit-linear-gradient(45deg, #C6A8AA, #D4E9F0);
+    }
+    .teacher>.flex-style {
+        padding-top: 49%;
+        position: static;
+    }
+    .teacher .text {
+        width: 100%;
+    }
+    .teacher .text .text-box {
+        position: static;
+        transform: inherit;
+    }
+    .teacher .text h3 {
+        font-size: 16px;
+        letter-spacing: 4px;
+        margin-bottom: 10px;
+    }
+    .teacher .pic {
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+    .teacher .pic img {
+        height: auto;
+        width: 70%;
+        top: -13%;
+    }
+    .teacher .text button {
+        display: block;
+    }
+    .teacher .text .pro {
+        margin-bottom: 35px;
+    }
+    .teacher:hover .pic img {
+        transform: translateX(50%);
+    }
+    .si-bg {
+        margin-bottom: 20px;
+    }
+    .si-bg .text h5 {
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: 3px;
+    }
+    .si-bg .text p {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+    .si-bg .text button {
+        width: 60%;
+    }
+    .si-bg .text button a {
+        padding: 13px 0;
+        font-size: 13px;
+    }
+    footer .contact {
+        width: 90%;
+    }
+    footer .contact span {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .service-banner {
+        padding-bottom: 120%;
+        background-position: 90% -5vw;
+    }
+    .service-banner .banner-title {
+        width: 100%;
+        transform: none;
+        bottom: 0;
+        top: inherit;
+        padding: 20px 30px;
+    }    
+    .skin-physiology .service-title {
+        width: 100%;
+    }
+    .skin-physiology img {
+        position: static;
+        width: 70%;
+        display: block;
+        margin: 0 auto 30px;
+    }
+    .small-title {
+        margin-bottom: 5px;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 715px) {
+    #banner {
+        padding-bottom: 60%;
+    }
+    #banner p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    #banner p {
+        height: 80%;
+        font-size: 16px;
+        top: 10%;
+        left: 5%;
+    }
+    .sf img {
+        margin: 0 auto 20px;
+    }
+    .sf .sf-title {
+        margin-bottom: 10px;
+    }
+    .sf .sf-title h5 {
+        font-size: 18px;
+    }
+    .sf p {
+        margin-bottom: 30px;
+    }
+    .teacher .text .name {
+        font-size: 35px;
+    }
+    .teacher .text h4 {
+        font-size: 16px;
+    }
+    .teacher .text h5 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .teacher .text .pro {
+        font-size: 12px;
+    }
+    .pure {
+        padding: 60px 15px;
+    }
+    .pure .line {
+        width: 90%;
+    }
+    .pure p {
+        font-size: 15.6px;
+        line-height: 1.7;
+    }
+    .subtitle {
+        font-size: 12px;
+    }
+    .si-box {
+        margin-top: 45px;
+    }
+    .si-bg {
+        margin-bottom: 20px;
+    }
+    .si-bg .text button {
+        opacity: 1;
+    }
+    .news {
+        padding-bottom: 100px;
+    }
+    .news-box {
+        margin: 30px auto 75px;
+    }
+    .news-box>div {
+        padding: 20px 15px 25px;
+    }
+    .news-box .arrow {
+        margin-right: 0;
+        margin-top: 0;
+    }
+    footer nav {
+        margin: 0 auto 45px;
+    }
+    
+    .btn-line {
+        width: 50px;
+        right: 20px;
+        bottom: 20px;
+    }
+    .service-box {
+        padding: 100px 0;
+    }
+    .service-box.pic-left .pic-box {
+        padding-right: calc(var(--bs-gutter-x)/ 2);
+    }
+    .service-box.pic-right .pic-box {
+        padding-left: calc(var(--bs-gutter-x)/ 2);
+    }
+    
+    .price {
+        padding: 60px 0;
+    }
+    .price-box {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #banner {
+        padding-bottom: 80%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .teacher>.flex-style {
+        padding-top: 48%;
+    }
+    #banner {
+        padding-bottom: 130%;
+        background-position: 35% center;
+    }
+    .service-banner .banner-title {
+        padding: 20px;
+    }
+    .price-content .pc .pc-box .product-name {
+        margin-bottom: 0;
+    }
+    .price-content .pc .pc-box .duration-time {
+        display: block;
+    float: inherit;
+    margin-top: 10px;
+    margin-bottom: 15px
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .teacher>.flex-style {
+        padding-top: 46%;
+    }
+    .service-banner .banner-title .bt h1 {
+        font-size: 22px;
+    }
+    .service-banner .banner-title .bt p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .service-banner .banner-title {
+        padding: 10px 15px;
+    }
+    .service-banner .banner-title .bt h1 {
+        font-size: 18px;
+    }
 }
