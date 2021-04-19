@@ -1,6 +1,7 @@
 body {
     background-color: #E7DFD9;
     color: #000;
+    font-family: '微軟正黑體','Noto Sans TC', sans-serif,'Noto Serif TC', serif,'Open Sans', sans-serif;
 }
 
 ul {
@@ -150,6 +151,9 @@ nav ul li {
 
 nav ul li a {
     text-align: center;
+    display: block;
+    padding: 5px 10px;
+    position: relative;
 }
 
 nav ul li a span {
@@ -157,27 +161,36 @@ nav ul li a span {
     letter-spacing: 1.3px;
     display: inline-block;
     text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
 }
 
 nav ul li a span:nth-child(2) {
-    display: none;
+    opacity: 0;
     color: #915256;
 }
 
 nav ul li a:hover span:first-child {
     display: none;
+    opacity: 0;
 }
 
 nav ul li a:hover span:nth-child(2) {
     display: inline-block;
+    opacity: 1;
 }
 
 nav ul li.active span:first-child {
     display: none;
+    opacity: 0;
 }
 
 nav ul li.active span:nth-child(2) {
     display: inline-block;
+    opacity: 1;
 }
 
 #menu-icon {
@@ -884,7 +897,6 @@ footer .copyright {
 .price-content .pc .pc-box .highlight>div span:first-child {
     color: #fff;
     font-family: "Noto Sans TC";
-    /* font-weight: 700; */
     font-size: 15px;
     letter-spacing: 1.5px;
     display: inline-block;
@@ -908,6 +920,20 @@ footer .copyright {
     margin-bottom: 0;
 }
 
+@media screen and (max-width: 1530px) {
+    #banner p {
+        height: 70%;
+        top: 15%;
+    }
+}
+
+@media screen and (max-width: 1310px) {
+    #banner p {
+        height: 80%;
+        top: 10%;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .service-banner .banner-title {
         padding: 30px 40px;
@@ -924,10 +950,17 @@ footer .copyright {
     }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1140px) {
     #banner p {
-        height: 70%;
-        top: 15%;
+        height: 90%;
+        top: 5%;
+    }
+}
+
+@media screen and (max-width: 1014px) {
+    #banner p {
+        top: 10%;
+        letter-spacing: 4px;
     }
 }
 
@@ -989,16 +1022,13 @@ footer .copyright {
 
 @media screen and (max-width: 985px) {
     #banner p {
-        height: 80%;
-        top: 10%;
         font-size: 20px;
     }
 }
 
 @media screen and (max-width: 805px) {
     #banner p {
-        height: 90%;
-        top: 10%;
+        letter-spacing: 2px;
     }
 }
 
@@ -1042,10 +1072,8 @@ footer .copyright {
         margin-top: 60px;
     }
     #banner p {
-        height: 90%;
-        font-size: 20px;
+        font-size: 18px;
         left: 10%;
-        top: 10%;
     }
     .sf p {
         margin-bottom: 30px;
@@ -1113,6 +1141,9 @@ footer .copyright {
     .si-bg .text button a {
         padding: 13px 0;
         font-size: 13px;
+    }
+    .si-bg:hover .hover-box {
+        width: 0;
     }
     footer .contact {
         width: 90%;
@@ -1298,5 +1329,23 @@ footer .copyright {
     }
     .service-banner .banner-title .bt h1 {
         font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .si-bg:hover .hover-box {
+        width: 0;
+    }
+    .teacher:hover .pic img {
+        transform: translateX(50%);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .si-bg:hover .hover-box {
+        width: 100%;
+    }
+    .teacher:hover .pic img {
+        transform: translateX(50%)scale(1.2);
     }
 }
