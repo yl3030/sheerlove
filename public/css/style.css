@@ -295,6 +295,14 @@ footer .contact span img {
     margin-left: 5px;
 }
 
+footer .credit {
+    font-family: Noto Sans TC;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 footer .copyright {
     font-family: Noto Sans TC;
     font-weight: 300;
@@ -834,11 +842,15 @@ footer .copyright {
     font-weight: 700;
 }
 
+.price-content .pc {
+    margin-bottom: 40px;
+}
+
 .price-content .pc .pc-box {
     border: 1px solid #C79D99;
     border-radius: 8px;
     padding: 50px 30px 20px;
-    margin-bottom: 40px;
+    height: 100%;
 }
 
 .price-content .pc .pc-box .product-name {
@@ -1091,7 +1103,7 @@ footer .copyright {
         background: -webkit-linear-gradient(45deg, #C6A8AA, #D4E9F0);
     }
     .teacher>.flex-style {
-        padding-top: 49%;
+        padding-top: 55%;
         position: static;
     }
     .teacher .text {
@@ -1113,8 +1125,8 @@ footer .copyright {
     }
     .teacher .pic img {
         height: auto;
-        width: 70%;
-        top: -13%;
+        width: 60%;
+        top: -20%;
     }
     .teacher .text button {
         display: block;
@@ -1292,9 +1304,6 @@ footer .copyright {
 }
 
 @media screen and (max-width: 414px) {
-    .teacher>.flex-style {
-        padding-top: 48%;
-    }
     #banner {
         padding-bottom: 130%;
         background-position: 35% center;
@@ -1314,9 +1323,6 @@ footer .copyright {
 }
 
 @media screen and (max-width: 375px) {
-    .teacher>.flex-style {
-        padding-top: 46%;
-    }
     .service-banner .banner-title .bt h1 {
         font-size: 22px;
     }
