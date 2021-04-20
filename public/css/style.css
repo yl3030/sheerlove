@@ -199,7 +199,7 @@ nav ul li.active span:nth-child(2) {
     width: 21px;
     height: 16px;
     position: relative;
-    transition: 0.5s;
+    transition: 0.3s;
     display: none;
 }
 
@@ -1032,6 +1032,15 @@ footer .copyright {
         font-size: 35px;
         margin-bottom: 25px;
     }
+    .price-content .pc .pc-box .duration-time {
+        display: block;
+        float: inherit;
+        margin-top: 0;
+        margin-bottom: 15px
+    }
+    .price-content .pc .pc-box .product-name {
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 985px) {
@@ -1064,11 +1073,11 @@ footer .copyright {
     }
     header nav {
         position: fixed;
-        top: -100%;
+        top: -150px;
         right: 0;
         width: 100vw;
         background-color: #E7DFD9;
-        transition: 0.5s;
+        transition: 0.3s;
         transition-timing-function: ease-in;
     }
     nav ul.flex-style {
@@ -1077,7 +1086,11 @@ footer .copyright {
     nav ul li {
         display: block;
         width: 100%;
-        padding: 10px 0;
+        /* padding: 10px 0; */
+        margin: 13px 0;
+    }
+    nav ul li a {
+        padding: 10px;
     }
     #menu-icon {
         display: block;
@@ -1191,6 +1204,15 @@ footer .copyright {
     .small-title {
         margin-bottom: 5px;
         margin-top: 15px;
+    }
+    .price-content .pc .pc-box .duration-time {
+        display: inline-block;
+        float: right;
+        font-size: 15px;
+        margin-top: 14px;
+    }
+    .price-content .pc .pc-box .product-name {
+        margin-bottom: 35px;
     }
 }
 
@@ -1312,12 +1334,12 @@ footer .copyright {
         padding: 20px;
     }
     .price-content .pc .pc-box .product-name {
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
     .price-content .pc .pc-box .duration-time {
         display: block;
     float: inherit;
-    margin-top: 10px;
+    margin-top: 0;
     margin-bottom: 15px
     }
 }
@@ -1337,6 +1359,16 @@ footer .copyright {
     }
     .service-banner .banner-title .bt h1 {
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .price-content .pc .pc-box .highlight>div span:first-child {
+        font-size: 13px;
+        margin-right: 5px;
+    }
+    .price-content .pc .pc-box .highlight>div span:nth-child(2) {
+        font-size: 16px;
     }
 }
 
